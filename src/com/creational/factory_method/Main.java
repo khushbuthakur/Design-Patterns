@@ -15,8 +15,8 @@ public class Main {
 		 * they are just concerned with what they get
 		 * 
 		 * */
-		
-		OS os = PhoneFactory.getPhone("Android");
+
+		OS os = PhoneFactory.getPhone(OsType.ANDROID);
 		os.show(); // This is Android which is most powerful OS
 		
 		OS iphone = PhoneFactory.getPhone("iOS");
@@ -24,6 +24,12 @@ public class Main {
 		
 		OS windows = PhoneFactory.getPhone("other");
 		windows.show(); // Mehhh! Who uses windows in phone???
+		
+		PhoneFactory.getPhone(OsType.OTHER).show();
+		//Mehhh! Who uses windows in phone???
+		
+		PhoneFactory.getPhone(OsType.APPLE).show();
+		//Apple has the best animations
 		
 		/**
 		 * This is old way, where we are calling classes in a
